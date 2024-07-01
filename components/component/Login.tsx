@@ -1,7 +1,6 @@
 "use client"
 import { auth, provider} from "@/app/firebase"
 import { signInWithPopup } from 'firebase/auth';
-import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth"
 import { useRouter } from 'next/navigation'
 import { Toaster } from "@/components/ui/sonner"
