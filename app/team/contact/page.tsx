@@ -1,6 +1,5 @@
 import { OP_Navbar } from '@/components/component/op_navbar'
 import Team_Contact from '@/components/component/team_contact'
-import { Team_Member } from '@/components/component/team_member'
 import React from 'react'
 
 

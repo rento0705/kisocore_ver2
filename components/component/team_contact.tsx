@@ -4,10 +4,9 @@
  * @see https://v0.dev/t/83NUiWKyYoL
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
@@ -17,7 +16,7 @@ export default function Team_Contact() {
     <Card className="w-full max-w-md mx-auto">
       <br />
       <CardContent>
-        <form className="grid gap-4" action="https://kisocore.form.newt.so/v1/dUz4xmvoD" method="post">
+        <form className="grid gap-4" action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT} method="post">
           <div className="grid gap-2">
             <Label htmlFor="name">名前<span className="text-red-500">*</span></Label>
             <Input name="name" id="name" placeholder="お名前を入力してください" required />

@@ -13,7 +13,7 @@ const index = () => {
         <br /><br />
         <p className='text-2xl underline text-bold text-red-500'>みなさんが基礎を理解するために、我々は全力を尽くしています。</p>
         <br />
-        {/* <div className="max-w-sm rounded overflow-hidden shadow-lg w-full">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg w-full">
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">なぜこのようなサービスが必要なのか？</div>
           <p className="text-gray-700 text-base">
@@ -34,7 +34,7 @@ const index = () => {
         <div className="px-6 pt-4 pb-2">
         <span>開発者 れんトゥール</span>
         </div>
-       </div> */}
+       </div>
     </div>
     </>
   )
