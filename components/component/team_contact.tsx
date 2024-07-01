@@ -28,15 +28,10 @@ export default function Team_Contact() {
           </div>
           <div className="grid gap-2">
             <Label htmlFor="line">LINE公式アカウントを持っていますか?<span className="text-red-500">*</span></Label>
-            <Select name="line" id="line" required>
-              <SelectTrigger>
-                <SelectValue placeholder="選択してください" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="yes">はい</SelectItem>
-                <SelectItem value="no">いいえ</SelectItem>
-              </SelectContent>
-            </Select>
+            <select name="line" id="line" required>
+              <option value="yes">はい</option>
+              <option value="no">いいえ</option>
+            </select>
           </div>
           <div className="grid gap-2">
             <Label htmlFor="subject">件名<span className="text-red-500">*</span></Label>
