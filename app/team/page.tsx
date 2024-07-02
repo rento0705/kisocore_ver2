@@ -8,33 +8,31 @@ const index = () => {
     <>
     <div className='flex flex-col items-center justify-center'>
       <OP_Navbar />
-        <h1 className='text-4xl'>KisoCore 運営チーム</h1>            
-
+      <br />
+        <p className='text-4xl text-red-500'>基本を強化し、未来を築く</p>
+        <p>KisoCoreは、基礎を学び・固めるためだけに作成されたシステムです。未来を担う子どもたちに、しっかりとした基盤を提供します。</p>
         <br /><br />
-        <p className='text-2xl underline text-bold text-red-500'>みなさんが基礎を理解するために、我々は全力を尽くしています。</p>
+        <h1 className='text-4xl text-cyan-500 underline'>我々のミッション</h1>
         <br />
-        <div className="max-w-sm rounded overflow-hidden shadow-lg w-full">
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">なぜこのようなサービスが必要なのか？</div>
-          <p className="text-gray-700 text-base">
-          これは私が友人の塾で使っているウェブ学習サービスから影響を受けたものです。
-          その友人は英語でわからないことがあるから、私にウェブ教材を代わりにやってくれと頼みました。
-          私はそのサービスを利用したとき、なぜその友人はできないのかと考えました。
-          友人はその範囲は塾の集団授業で履修済みでした。
-          なぜ講義動画も用意されているのにわからないのか。
-          それは、基礎がなってないからだと思いました。
-          この世の中には基礎+応用のサービスがたくさん存在し、塾やその友達が使っているサービスもそうでした。
-          ですが、基礎を固めることだけができるサービスはないと思ったのです。
-          そこで、このKisoCoreからは応用を一切排除し「基礎」を超固めるということに重点を置きました。
-          みなさんが基礎を固め、学力向上に少しでもお力になれたらと思い、このサービスを開発しました。
-          KisoCoreは、基礎がなっていない人が使い、基礎を理解し、そこから自力で応用も解けるようになる、
-          そんなほぼ応用しかやらないものと真逆を提供し、基礎を固めた人が強くなる。それをお供するサービスとして、基礎を固めるシステムが必要なのです。
-          </p>
-        </div>
-        <div className="px-6 pt-4 pb-2">
-        <span>開発者 れんトゥール</span>
-        </div>
-       </div>
+        <p className='text-3xl'>基礎学力の重要性を理解させ、強固な学力の基盤を提供する</p>
+        <p className='text-2xl'>我々は、基礎学力の重要性を理解させ、強固な学力の基盤を提供することをミッションにしています。</p>
+        <br /><br />
+        <h1 className='text-4xl text-cyan-500 underline'>ビジョン</h1>
+        <br />
+        <p className='text-3xl'>誰もが利用できる基礎を固めるための、質の高い教育プラットフォームを提供する</p>
+        <p className='text-2xl'>すべての勉学につながる基礎。基礎を固めることにより、質の高い勉強を効率よくできると考えます。そのために、誰もが利用でき、使いやすく、質の高い教育プラットフォームを提供します。</p>
+        <br /><br />
+        <h1 className='text-4xl text-cyan-500 underline'>メッセージ</h1>
+        <br />
+        <p className='text-2xl'>基礎学習に<span className='text-blue-500'>Innovationを。</span></p>
+        <br />
+        <p>日々変化する教育現場。その中で変化し続けないのは<span className='underline'>応用</span>だと考えています。</p>
+        <p>応用を解くためには、基礎がなっている必要があります。基礎+応用を学習するサービスなどはこの世の中にたくさん存在します。</p>
+        <p>そんな中で、我々は<span>基礎</span>に重点を置きました。</p>
+        <p className='text-red-500'>私達は応用を一切排除しました。</p>
+        <p>基礎を強固にする学習サービスを提供し、<span className='text-2xl text-cyan-500'>自分で応用を解けるようになる。</span>そんな願いを込めて、KisoCoreを運営します。</p>
+        <br />
+        <p className='text-2xl'>運営チームCEO れんトゥール & 教材作成者 HN</p>
     </div>
     </>
   )

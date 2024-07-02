@@ -47,6 +47,9 @@ export function Product_navbar() {
         <Link href="/terms-pp" className="text-sm font-medium hover:underline underline-offset-4 text-cyan-500" prefetch={false}>
           利用規約・プライバシーポリシー
         </Link>
+        <Link href="/team" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          運営チーム
+        </Link>
       </nav>
       <Sheet>
         <SheetTrigger asChild>
@@ -74,6 +77,9 @@ export function Product_navbar() {
         </Link>
         <Link href="/terms-pp" className="text-sm font-medium hover:underline underline-offset-4 text-cyan-500" prefetch={false}>
           利用規約・プライバシーポリシー
+        </Link>
+        <Link href="/team" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          運営チーム
         </Link>
           </nav>
         </SheetContent>

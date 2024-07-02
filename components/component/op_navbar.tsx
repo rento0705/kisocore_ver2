@@ -27,6 +27,7 @@ export function OP_Navbar() {
       <Link href="/team" className="flex items-center gap-2" prefetch={false}>
         <img src="/logo.ico" className="h-6 w-6" />
         <span className="ml-2 text-lg font-bold">KisoCore 運営チーム</span>
+        <span>by R.Systems</span>
       </Link>
       <nav className="hidden sm:flex items-center gap-6">
         <Link href="/team" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
