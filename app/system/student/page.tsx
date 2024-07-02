@@ -14,9 +14,8 @@ import {
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-const [user] = useAuthState(auth)
-const page = () => {
-
+const Page = () => {
+  const [user] = useAuthState(auth)
   return (
 
     <>
@@ -46,4 +45,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
