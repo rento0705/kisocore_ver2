@@ -23,7 +23,7 @@ const Login = () => {
     <div className='flex justify-center'><SignInButton /></div>
     <br />
     <p className="flex justify-center">※ログインできない場合は開発チームに連絡してください。</p>
-    <p className="flex justify-center">このサービスにログインすると<a href="/system/student/terms" className="text-blue-500">利用規約</a>および<a href="" className="text-blue-500">プライバシーポリシー</a>に同意したものとします。</p>
+    <p className="flex justify-center">このサービスにログインすると<a href="/terms-pp" className="text-blue-500">利用規約およびプライバイシーポリシー</a>に同意したものとします。</p>
     </>
   )
 }

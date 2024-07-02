@@ -1,10 +1,10 @@
-import Product_navbar from "@/components/component/product_navbar";
 import { AlertCircle } from "lucide-react"
 import {
     Alert,
     AlertDescription,
     AlertTitle,
   } from "@/components/ui/alert"
+import { Product_navbar } from "@/components/component/product_navbar"
 
 
 export default function NotFound() {
