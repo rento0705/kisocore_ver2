@@ -11,12 +11,12 @@ import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
 
-export default function Team_Contact() {
+export default function Student_Contact() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <br />
       <CardContent>
-        <form className="grid gap-4" action={process.env.NEXT_PUBLIC_NEWT_TEAM_FORM_ENDPOINT} method="post">
+        <form className="grid gap-4" action={process.env.NEXT_PUBLIC_NEWT_STUDNENT_FORM_ENDPOINT} method="post">
           <div className="grid gap-2">
             <Label htmlFor="name">名前<span className="text-red-500">*</span></Label>
             <Input name="name" id="name" placeholder="お名前を入力してください" required />
