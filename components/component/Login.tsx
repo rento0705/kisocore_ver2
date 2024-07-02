@@ -34,14 +34,13 @@ function SignInButton(){
     const signInWithGoogle = async () => {
       try{
         await signInWithPopup(auth, provider)
-        await toast("Event has been created.")
+        await toast("ログインに成功しました")
         await router.push("/system/student/")
       }catch (err){
         alert("Authエラー:\n" + err)
         console.log(err)
       }
     };
-  
 
   return (
     <button className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800' onClick={signInWithGoogle}><p>Googleでサインイン</p></button>
