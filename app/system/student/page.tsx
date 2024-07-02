@@ -14,9 +14,8 @@ import {
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
+const [user] = useAuthState(auth)
 const page = () => {
-
-  const [user] = useAuthState(auth)
 
   return (
 
