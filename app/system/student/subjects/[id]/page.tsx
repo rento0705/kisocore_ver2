@@ -18,9 +18,8 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { AlertCircle } from 'lucide-react'
 
 const Page = ({ params }: { params: { id: string } }) => {
+  const [user] = useAuthState(auth)
   async () => {
-    const [user] = useAuthState(auth)
-
     if(!user){
       redirect("/system/student/login")
     }
