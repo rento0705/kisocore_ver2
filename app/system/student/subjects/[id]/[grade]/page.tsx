@@ -270,7 +270,179 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
             </CardHeader>
             <CardContent>
               <Button asChild disabled>
-                <Link href="/system/student/subjects/ss/first">
+                <Link href="/system/student/subjects/ss/third">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  }
+  //理科
+  else if (params.id == "science" && params.grade == "first") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学理科 1年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/science/first">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  } else if (params.id == "science" && params.grade == "second") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学理科 2年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/science/second">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  } else if (params.id == "science" && params.grade == "third") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学理科 3年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/science/third">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  }
+  //英語
+  else if (params.id == "english" && params.grade == "first") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学英語 1年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/english/first">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  } else if (params.id == "english" && params.grade == "second") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学英語 2年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/english/second">
+                  単元リストに進む
+                </Link>
+              </Button>
+            </CardContent>
+            <CardFooter>
+              <p className="text-red-500">備考:現在準備中</p>
+            </CardFooter>
+          </Card>
+        </div>
+      </>
+    );
+  } else if (params.id == "english" && params.grade == "third") {
+    return (
+      <>
+        <Student_Navbar />
+        <div className="flex justify-center">
+          <h1 className="text-3xl">中学英語 3年</h1>
+        </div>
+        <p className="flex justify-center text-3xl">単元を選択してください。</p>
+        <br />
+        <div className="md:flex justify-center items-center">
+          <Card className="flexw-[350px]">
+            <CardHeader>
+              <CardTitle>準備中</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild disabled>
+                <Link href="/system/student/subjects/english/third">
                   単元リストに進む
                 </Link>
               </Button>
