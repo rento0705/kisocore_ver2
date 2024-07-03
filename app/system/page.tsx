@@ -14,6 +14,7 @@ const page = () => {
                     <AlertTitle>403 Forbidden</AlertTitle>
                     <AlertDescription>
                     アクセスが拒否されました。
+                    <p>このページにアクセスすることはできません。</p>
                     </AlertDescription>
             </Alert>
     </div>

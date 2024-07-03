@@ -23,7 +23,6 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent, SheetClose } from "@/components/ui/sheet"
 import { auth } from "@/app/firebase"
 import { useRouter } from 'next/navigation'
-import { toast } from "sonner"
 
 export function Student_Navbar() {
   const router = useRouter()
@@ -39,7 +38,7 @@ export function Student_Navbar() {
   return (
     <header className="flex h-16 w-full items-center justify-between bg-background px-4 md:px-6">
       <div className="flex items-center gap-4">
-        <Link href="#" className="text-lg font-bold" prefetch={false}>
+        <Link href="/system/student" className="text-lg font-bold" prefetch={false}>
           KisoCore Student
         </Link>
       </div>
@@ -82,7 +81,7 @@ export function Student_Navbar() {
         </SheetTrigger>
         <SheetContent side="right" className="w-[300px]">
           <div className="flex h-16 items-center justify-between px-4">
-            <Link href="#" className="text-lg font-bold" prefetch={false}>
+            <Link href="/system/student" className="text-lg font-bold" prefetch={false}>
               KisoCore Student
             </Link>
             <SheetClose>

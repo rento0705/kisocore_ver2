@@ -2,21 +2,14 @@
 import { auth, provider} from "@/app/firebase"
 import { signInWithPopup } from 'firebase/auth';
 import { useAuthState } from "react-firebase-hooks/auth"
-import { useRouter } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import { Toaster } from "@/components/ui/sonner"
 import { toast } from "sonner"
+import { useRouter } from "next/navigation";
 
 
 
 const Login = () => {
-
-  const [user] = useAuthState(auth);
-  const router = useRouter()
-
-  if (user){
-    router.push("/system/student/")
-  }
-
   return (
     <>
     <Toaster />
@@ -30,7 +23,7 @@ const Login = () => {
 
 //グーグルボタンでサインイン
 function SignInButton(){
-    const router = useRouter()
+    const router = useRouter();
     const signInWithGoogle = async () => {
       try{
         await signInWithPopup(auth, provider)

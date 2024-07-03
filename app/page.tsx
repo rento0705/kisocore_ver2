@@ -1,7 +1,9 @@
 import { Product_navbar } from "@/components/component/product_navbar";
+import { Metadata } from "next";
 import Image from "next/image";
 
 export default function Home() {
+
   return (
     <>
     <Product_navbar />
