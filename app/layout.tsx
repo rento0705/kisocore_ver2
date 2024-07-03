@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const notosans = Noto_Sans_JP({ subsets: ["latin"] });
 
@@ -16,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={notosans.className}>{children}</body>
+      <body className={notosans.className}>{children}
+      <Analytics />
+      <SpeedInsights />
+      </body>
     </html>
   );
 }
