@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation';
 import React from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth';
 
-const page = () => {
+const Page = () => {
 
   const [user] = useAuthState(auth);
 
@@ -57,4 +57,4 @@ const page = () => {
   
 }
 
-export default page
+export default Page
