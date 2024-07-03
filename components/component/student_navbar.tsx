@@ -84,9 +84,6 @@ export function Student_Navbar() {
             <Link href="/system/student" className="text-lg font-bold" prefetch={false}>
               KisoCore Student
             </Link>
-            <SheetClose>
-              <XIcon className="h-6 w-6" />
-            </SheetClose>
           </div>
           <div className="grid gap-2 py-6 px-4">
             <Link

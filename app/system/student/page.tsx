@@ -42,7 +42,7 @@ const Page = () => {
         <p className='flex justify-center text-3xl'>基礎を学びましょう。</p>
         <br /><br />
         <p className='flex justify-center text-2xl'>履修する科目を選択してください。</p>
-        <div className='flex justify-center items-center'>
+        <div className='md:flex justify-center items-center'>
         <Card className='flexw-[350px]'>
           <CardHeader>
             <CardTitle>中学国語</CardTitle>
@@ -109,6 +109,7 @@ const Page = () => {
           </CardFooter>
         </Card>
         </div>
+
         </>
       )
     }

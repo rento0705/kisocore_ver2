@@ -35,7 +35,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       <p className='flex justify-center text-3xl'>学年を選択してください。</p>
       <br />
-      <div className='flex justify-center items-center'>
+      <div className='md:flex justify-center items-center'>
       <Card className='flexw-[350px]'>
         <CardHeader>
           <CardTitle>中学1年</CardTitle>
@@ -90,7 +90,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       <p className='flex justify-center text-3xl'>学年を選択してください。</p>
       <br />
-      <div className='flex justify-center items-center'>
+      <div className='md:flex justify-center items-center'>
       <Card className='flexw-[350px]'>
         <CardHeader>
           <CardTitle>中学1年</CardTitle>
@@ -145,7 +145,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       <p className='flex justify-center text-3xl'>学年を選択してください。</p>
       <br />
-      <div className='flex justify-center items-center'>
+      <div className='md:flex justify-center items-center'>
       <Card className='flexw-[350px]'>
         <CardHeader>
           <CardTitle>中学1年</CardTitle>
@@ -200,7 +200,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       <p className='flex justify-center text-3xl'>学年を選択してください。</p>
       <br />
-      <div className='flex justify-center items-center'>
+      <div className='md:flex justify-center items-center'>
       <Card className='flexw-[350px]'>
         <CardHeader>
           <CardTitle>中学1年</CardTitle>
@@ -255,7 +255,7 @@ const Page = ({ params }: { params: { id: string } }) => {
       </div>
       <p className='flex justify-center text-3xl'>学年を選択してください。</p>
       <br />
-      <div className='flex justify-center items-center'>
+      <div className='md:flex justify-center items-center'>
       <Card className='flexw-[350px]'>
         <CardHeader>
           <CardTitle>中学1年</CardTitle>
