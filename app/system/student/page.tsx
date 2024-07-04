@@ -16,46 +16,14 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { collection, getDocs } from "firebase/firestore";
-
-interface OrganizationData {
-  org_id: string;
-  Name: string;
-  role: string;
-}
 
 const Page = () => {
   const [user] = useAuthState(auth);
-  const [org_id] = useState("org_id");
-
   async () => {
     if (!user) {
       redirect("/system/student/login");
     }
   };
-
-  console.log(user?.uid);
-
-  const [orgData, setOrgData] = useState<OrganizationData | null>(null);
-
-  useEffect(() => {
-    const fetchOrgData = async () => {
-      if (user) {
-        try {
-          const response = await fetch(`/api/account?uid=${user.uid}`);
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          const data: OrganizationData = await response.json();
-          setOrgData(data);
-        } catch (error) {
-          console.error("Failed to fetch organization data:", error);
-        }
-      }
-    };
-
-    fetchOrgData();
-  }, [user]);
 
   if (user) {
     return (
@@ -63,7 +31,6 @@ const Page = () => {
         <Student_Navbar />
         <div className="flex justify-center">
           <h1 className="text-3xl">ようこそ、{user?.displayName}さん</h1>
-          <h1>所属組織:{orgData?.org_id}</h1>
         </div>
         <p className="flex justify-center text-3xl">基礎を学びましょう。</p>
         <br />
