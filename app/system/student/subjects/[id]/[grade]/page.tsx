@@ -19,6 +19,17 @@ import { AlertCircle } from "lucide-react";
 import JP_First_Units from "@/components/Subjects/Japanese/First/Units";
 import JP_Second_Units from "@/components/Subjects/Japanese/Second/Units";
 import JP_Third_Units from "@/components/Subjects/Japanese/Third/Units";
+import MH_First_Units from "@/components/Subjects/Math/First/Units";
+import MH_Second_Units from "@/components/Subjects/Math/Second/Units";
+import MH_Third_Units from "@/components/Subjects/Math/Third/Units";
+import SC_First_Units from "@/components/Subjects/Science/First/Units";
+import SC_Second_Units from "@/components/Subjects/Science/Second/Units";
+import SC_Third_Units from "@/components/Subjects/Science/Third/Units";
+import EN_Third_Units from "@/components/Subjects/English/Third/Units";
+import EN_Second_Units from "@/components/Subjects/English/Second/Units";
+import EN_First_Units from "@/components/Subjects/English/First/Units";
+import Tiri_Units from "@/components/Subjects/SS/Tiri/Units";
+import Rekisi_Units from "@/components/Subjects/SS/Rekisi/Units";
 
 const Page = ({ params }: { params: { grade: string; id: string } }) => {
   const [user] = useAuthState(auth);
@@ -76,23 +87,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/math/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <MH_First_Units />
       </>
     );
   } else if (params.id == "math" && params.grade == "second") {
@@ -104,23 +99,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/math/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <MH_Second_Units />
       </>
     );
   } else if (params.id == "math" && params.grade == "third") {
@@ -132,109 +111,33 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/math/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <MH_Third_Units />
       </>
     );
   }
   //社会
-  else if (params.id == "ss" && params.grade == "first") {
+  else if (params.id == "ss" && params.grade == "tiri") {
     return (
       <>
         <Student_Navbar />
         <div className="flex justify-center">
-          <h1 className="text-3xl">中学社会 1年</h1>
+          <h1 className="text-3xl">中学社会 地理</h1>
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/ss/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <Tiri_Units />
       </>
     );
-  } else if (params.id == "ss" && params.grade == "second") {
+  } else if (params.id == "ss" && params.grade == "rekisi") {
     return (
       <>
         <Student_Navbar />
         <div className="flex justify-center">
-          <h1 className="text-3xl">中学社会 2年</h1>
+          <h1 className="text-3xl">中学社会 歴史</h1>
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/ss/second">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
-      </>
-    );
-  } else if (params.id == "ss" && params.grade == "third") {
-    return (
-      <>
-        <Student_Navbar />
-        <div className="flex justify-center">
-          <h1 className="text-3xl">中学社会 3年</h1>
-        </div>
-        <p className="flex justify-center text-3xl">単元を選択してください。</p>
-        <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/ss/third">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <Rekisi_Units />
       </>
     );
   }
@@ -248,23 +151,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/science/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <SC_First_Units />
       </>
     );
   } else if (params.id == "science" && params.grade == "second") {
@@ -276,23 +163,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/science/second">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <SC_Second_Units />
       </>
     );
   } else if (params.id == "science" && params.grade == "third") {
@@ -304,23 +175,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/science/third">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <SC_Third_Units />
       </>
     );
   }
@@ -334,23 +189,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/english/first">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <EN_First_Units />
       </>
     );
   } else if (params.id == "english" && params.grade == "second") {
@@ -362,23 +201,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/english/second">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <EN_Second_Units />
       </>
     );
   } else if (params.id == "english" && params.grade == "third") {
@@ -390,23 +213,7 @@ const Page = ({ params }: { params: { grade: string; id: string } }) => {
         </div>
         <p className="flex justify-center text-3xl">単元を選択してください。</p>
         <br />
-        <div className="md:flex justify-center items-center">
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>準備中</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild disabled>
-                <Link href="/system/student/subjects/english/third">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
-        </div>
+        <EN_Third_Units />
       </>
     );
   } else {

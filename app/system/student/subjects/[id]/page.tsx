@@ -161,11 +161,11 @@ const Page = ({ params }: { params: { id: string } }) => {
         <div className="md:flex justify-center items-center">
           <Card className="flexw-[350px]">
             <CardHeader>
-              <CardTitle>中学1年</CardTitle>
+              <CardTitle>地理</CardTitle>
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <Link href="/system/student/subjects/ss/first">
+                <Link href="/system/student/subjects/ss/tiri">
                   単元リストに進む
                 </Link>
               </Button>
@@ -178,11 +178,11 @@ const Page = ({ params }: { params: { id: string } }) => {
           <br />
           <Card className="flexw-[350px]">
             <CardHeader>
-              <CardTitle>中学2年</CardTitle>
+              <CardTitle>歴史</CardTitle>
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <Link href="/system/student/subjects/ss/second">
+                <Link href="/system/student/subjects/ss/rekisi">
                   単元リストに進む
                 </Link>
               </Button>
@@ -193,21 +193,6 @@ const Page = ({ params }: { params: { id: string } }) => {
           </Card>
           <br />
           <br />
-          <Card className="flexw-[350px]">
-            <CardHeader>
-              <CardTitle>中学3年</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Button asChild>
-                <Link href="/system/student/subjects/ss/third">
-                  単元リストに進む
-                </Link>
-              </Button>
-            </CardContent>
-            <CardFooter>
-              <p className="text-red-500">備考:現在準備中</p>
-            </CardFooter>
-          </Card>
         </div>
       </>
     );
